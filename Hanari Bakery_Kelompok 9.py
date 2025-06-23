@@ -2,7 +2,7 @@
 #Ahmad Dhani K (K3524003)
 #Naufal Daaris F (K3524015)
 #Ammar Rozan A (K3524043)
-#Rakha Atmaja S (K3524065)
+#Rakha Admaja S (K3524065)
 
 from abc import ABC, abstractmethod
 
