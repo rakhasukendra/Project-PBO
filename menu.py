@@ -6,24 +6,59 @@ def tambah_produk():
     print("\n Pilih jenis produk")
     print("1. Roti Manis\n2. Croissant\n3. Butter Cookies\n4. Muffin")
     pilih_tambah = input("Pilih Produk : ")
-    nama = input("Nama produk : ")
-    kode = input("Kode produk : ")
-    bahan = {}
-    while True:
-        bahan_baku = input("Masukkan bahan (ketikkan '0' untuk menyelesaikan) : ")
-        if bahan_baku == "0": break
-        jumlah = input(f"Jumlah {bahan_baku} (gram, butir, dsb) : ")
-        bahan[bahan_baku] = jumlah
-    biaya = float(input("Biaya produksi per pcs : "))
-    harga = float(input("Harga jual per pcs : "))
+
 
     if pilih_tambah == "1":
+        nama = input("Nama produk : ")
+        kode = input("Kode produk : ")
+        bahan = {}
+        while True:
+            bahan_baku = input("Masukkan bahan (ketikkan '0' untuk menyelesaikan) : ")
+            if bahan_baku == "0": break
+            jumlah = input(f"Jumlah {bahan_baku} (gram, butir, dsb) : ")
+            bahan[bahan_baku] = jumlah
+        biaya = float(input("Biaya produksi per pcs : "))
+        harga = float(input("Harga jual per pcs : "))
+        
         produk = RotiManis(nama, kode, bahan, biaya, harga)
     elif pilih_tambah == "2":
+        nama = input("Nama produk : ")
+        kode = input("Kode produk : ")
+        bahan = {}
+        while True:
+            bahan_baku = input("Masukkan bahan (ketikkan '0' untuk menyelesaikan) : ")
+            if bahan_baku == "0": break
+            jumlah = input(f"Jumlah {bahan_baku} (gram, butir, dsb) : ")
+            bahan[bahan_baku] = jumlah
+        biaya = float(input("Biaya produksi per pcs : "))
+        harga = float(input("Harga jual per pcs : "))
+        
         produk = Croissant(nama, kode, bahan, biaya, harga)
     elif pilih_tambah == "3":
+        nama = input("Nama produk : ")
+        kode = input("Kode produk : ")
+        bahan = {}
+        while True:
+            bahan_baku = input("Masukkan bahan (ketikkan '0' untuk menyelesaikan) : ")
+            if bahan_baku == "0": break
+            jumlah = input(f"Jumlah {bahan_baku} (gram, butir, dsb) : ")
+            bahan[bahan_baku] = jumlah
+        biaya = float(input("Biaya produksi per pcs : "))
+        harga = float(input("Harga jual per pcs : "))
+        
         produk = ButterCookies(nama, kode, bahan, biaya, harga)
     elif pilih_tambah == "4":
+        nama = input("Nama produk : ")
+        kode = input("Kode produk : ")
+        bahan = {}
+        while True:
+            bahan_baku = input("Masukkan bahan (ketikkan '0' untuk menyelesaikan) : ")
+            if bahan_baku == "0": break
+            jumlah = input(f"Jumlah {bahan_baku} (gram, butir, dsb) : ")
+            bahan[bahan_baku] = jumlah
+        biaya = float(input("Biaya produksi per pcs : "))
+        harga = float(input("Harga jual per pcs : "))
+        
         produk = Muffin(nama, kode, bahan, biaya, harga)
     else:
         print("Silakan pilih menu yang ada.")
